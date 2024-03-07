@@ -1,4 +1,4 @@
-.page-container {
+.outer-container {
     width: 100%;
     height: 100vh;
     color: white;
@@ -11,6 +11,18 @@
     align-items: center;
 }
 
-.page-container img {
+.outer-container img {
     width: 500px;
 }
+
+.options {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+}
+
+.options li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
