@@ -5,24 +5,16 @@ import Home from "./pages/Home/Home.jsx";
 import Post from "./pages/Post/Post.jsx";
 import Overview from "./pages/Overview/Overview.jsx";
 import Notfound from "./pages/NotFound/Notfound.jsx";
+import Navbar from "./components/Navbar.jsx";
+
+
 
 
 
 function App() {
     return (
         <div className="outer-container">
-            <nav className="outer-container navigation">
-                <ul className="options">
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/overview">Alle posts</NavLink></li>
-                    <li>
-                        <NavLink to="/post">Nieuwe post maken</NavLink>
-                    </li>
-                </ul>
-            </nav>
+            <Navbar></Navbar>
             <img src={logo} alt="Company logo"/>
             <h1>Begin hier met het maken van jouw blog-applicatie!</h1>
             <main>
